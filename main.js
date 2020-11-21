@@ -82,9 +82,9 @@ let treasure = new Treasure(0,0);
 function drawTreasure() {
   const treasureImage = new Image();
   treasureImage.src = 'images/treasure.png';
-  const ratio = treasureImage.width/treasureImage.height;
   const width = 50
   treasureImage.addEventListener('load', () => {
+    const ratio = treasureImage.width/treasureImage.height;
     context.drawImage(
       treasureImage, 
       treasure.col * 50, 
